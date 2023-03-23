@@ -23,7 +23,7 @@ if ! is_strict && cat /proc/1/environ | grep "container=lxc" &> /dev/null
   then
     printf -- '\e[1;31mERROR: \033[0m the lxc profile for MicroK8s might be missing. \n'
     printf -- '\t  Refer to this help document to get MicroK8s working in with LXD: \n'
-    printf -- '\t  https://microk8s.io/docs/lxd \n'
+    printf -- '\t  https://microk8s.io/docs/install-lxd \n'
     exit 1
   fi
 fi
